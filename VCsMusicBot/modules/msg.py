@@ -1,15 +1,15 @@
 import os
 from VCsMusicBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 🙋‍♂️ [{}](tg://user?id={})!**\n\n🤖 I'm an advanced bot created by **@TheTeleRoid** for playing music in the voice chats of Telegram Groups & Channels.\n\n Hits /help for more info about this Bot."
+      START_MSG = "**Hello 🙋‍♂️ [{}](tg://user?id={})!**\n\n🤖 I'm an music player bot created by **@TOBOT_UPDATE** for playing music in the voice chats of Telegram Groups & Channels.\n\n Hits /help for more info about this Bot."
       HELP_MSG = [
         ".",
 f"""
 **Hello, Welcome to {PROJECT_NAME} By @TheTeleRoid
 
-📌 I can play music in your group's voice chat as well as channel voice chats.
+🔘 I can play music in your group's voice chat as well as channel voice chats.
 
-📌 Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
+🔘 Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
 """,
 
 f"""
@@ -67,7 +67,7 @@ f"""
 
 **Channel is also can be used instead of c** ( /cplay = /channelplay )
 
-**⭕ If you donlt like to play in linked group:**
+**🔘 If you donlt like to play in linked group:**
 
 1) Get your channel ID.
 2) Create a group with tittle: Channel Music: your_channel_id
