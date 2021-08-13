@@ -17,12 +17,17 @@ def _start(client, message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "👤 Group 👤", url=f"https://t.me/{SUPPORT_GROUP}"), 
+                        "Group👥", url=f"https://t.me/{SUPPORT_GROUP}"), 
                     InlineKeyboardButton(
-                        "⭕ Channel ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "Channel📢", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/PredatorHackerzZ/TeleRoid-MusicBot")
+                        "REPO🤖", url="https://t.me/bot_repo}"),
+                    Inlinekeyboardbutton(
+                        "DEVELOPER👩‍💻", url="https://t.me/rungram}")
+               ],[
+                   Inlinekeyboardbutton(
+                        "🔔SUBSCRIBE🔔", url="https://youtube.com/channel/UC1SeMwgyNDi_n4T8cbgVjKQ")]
                 ]
             ]
         ),
@@ -37,7 +42,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⭕ Support Group ⭕", url="https://t.me/TeleRoid14"
+                        "⭕ Support Group ⭕", url="https://t.me/tobotupdate"
                     )
                 ],    
                 [    
@@ -86,9 +91,9 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = "👤 Group 👤", url=f"https://t.me/{SUPPORT_GROUP}"),
-             InlineKeyboardButton(text = "⭕ Channel ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = "🛠 Source Code 🛠", url="https://github.com/PredatorHackerzZ/TeleRoid-MusicBot")],
+            [InlineKeyboardButton(text = "Group👥", url=f"https://t.me/{SUPPORT_GROUP}"),
+             InlineKeyboardButton(text = "Channel📢", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton(text = "🔔SUBSCRIBE🔔", url="https://youtube.com/channel/UC1SeMwgyNDi_n4T8cbgVjKQ")],
             [InlineKeyboardButton(text = "◀️ Back", callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -100,7 +105,7 @@ def map(pos):
         ]
     return button
 
-@Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["help","help@music_tobot"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**Hello there! I can play music in the voice chats of telegram groups & channels.**""",
